@@ -2,7 +2,9 @@ root{
     --logo-color: #FB3F6C;
     --text-primary: #282C4B;
     --text-secondary: #747582;
-    --button-color: linear-gradient(to right, #FF698D, #FB3F6C)
+    --button-color: linear-gradient(to right, #FF698D, #FB3F6C);
+    --base-font-size: 20px;
+    --nav-font-size: 16px;
 
 }
 
@@ -11,46 +13,63 @@ body{
     padding: 0.5rem 2rem;
     font-family: 'Ubuntu', sans-serif; 
     max-width: 100vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 
-.business-name{
+.main-content,
+.nav-bar{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.business-name{ 
     font-size: 26px;
     font-weight: bold;
     font-style: italic;
 }
 
-.highlight{
+.highlight{ 
     color: var(--logo-color);
 }
 
 .nav-bar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .nav-links{
     display: flex;
+    gap: 3rem;
     align-self: center;
-    gap: 2rem;
 }
 
 .nav-links a{
     text-decoration: none;
     color: var(--text-secondary);
+    font-size: var(--nav-font-size);
+    display: inline;
+    padding: 1rem;
 }
 
 .nav-links button{
-    justify-content: center;
+    border: 1px solid #FF698D;
+    font-size: 14px ;
+    background-color: #ffff;
+    display: flex;
+    align-self: center;
 }
 
 button{
     border-radius: 2rem;
-    background-color: var(--button-color);
+    background-color: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1rem 2rem;
     
 }
 
-.hero
-.nav-bar{
-    max-width: 1400px;
-    background-color: #E5E5E5;
-}
+
+
