@@ -1,7 +1,8 @@
-root{
+:root{
     --logo-color: #FB3F6C;
     --text-primary: #282C4B;
     --text-secondary: #747582;
+    --text-altenative: #F17216;
     --button-color: linear-gradient(to right, #FF698D, #FB3F6C);
     --base-font-size: 20px;
     --nav-font-size: 16px;
@@ -10,28 +11,18 @@ root{
 
 body{
     min-height: 100vh;
-    padding: 0.5rem 2rem;
     font-family: 'Ubuntu', sans-serif; 
     max-width: 100vw;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-}
-
-.main-content,
-.nav-bar{
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .business-name{ 
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     font-style: italic;
 }
 
 .highlight{ 
-    color: var(--logo-color);
+    color: #FB3F6C;
 }
 
 .nav-bar{
@@ -48,8 +39,8 @@ body{
 
 .nav-links a{
     text-decoration: none;
-    color: var(--text-secondary);
-    font-size: var(--nav-font-size);
+    color: #747582;
+    font-size: 16px;
     display: inline;
     padding: 1rem;
 }
@@ -57,19 +48,127 @@ body{
 .nav-links button{
     border: 1px solid #FF698D;
     font-size: 14px ;
-    background-color: #ffff;
+    background-color: #fff5f5;
     display: flex;
     align-self: center;
 }
 
-button{
+.get-started-btn,
+.talk-btn{
     border-radius: 2rem;
-    background-color: none;
     font-size: 14px;
     font-weight: bold;
     padding: 1rem 2rem;
-    
 }
+
+
+
+.top-page{
+    background-color: #fff5f5;
+    margin: 1% 1%;
+}
+
+.top-page-container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.verify{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F17216;
+    padding-bottom: 1rem;
+}
+
+.verify img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+
+
+.top-heading h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+  color: #282C4B;
+  line-height: 70px;
+}
+
+.curve-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.4rem; /* Adjust height of curve */
+  pointer-events: none;
+}
+
+.curve path {
+  stroke: #ff6584;
+  stroke-width: 3;
+  fill: none;
+  stroke-linecap: round; 
+}
+
+.text-container{
+    padding-top: 5rem;
+}
+
+.text-container p{
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #747582;
+    margin-bottom: 5rem;
+    text-align: left;
+    max-width: 550px;
+}
+
+.top-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-section-btn{
+    display: flex;
+}
+
+.get-started-btn{
+    background-image: linear-gradient(to right, #FF698D, #FB3F6C);
+    color: #FFFF;
+    margin-right: 2rem;
+    border: none;
+}
+
+.get-started-btn:hover{
+    opacity: 0.9;
+    transition: all 0.2 ease;
+}
+
+.watch-btn-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.watch-btn-container button{
+    border: none;
+    color:  #282C4B;
+    background-color: none;
+    background-image: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 
 
 
